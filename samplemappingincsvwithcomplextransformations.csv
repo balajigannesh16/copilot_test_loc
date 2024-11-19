@@ -1,0 +1,9 @@
+﻿Source Table Name,Source Column Name,Transformation Rule,Target Table Name,Target Column Name,Primary Key in Target Table
+DB.SRC,EmployeeName,No transformations. This is a direct mapping,DB.TGT,EmpName,No
+DB.SRC,EmployeeId,"This is a direct mapping from source. Make sure if the EmployeeId in source has non numerical characters, replace them with N/A",DB.TGT,EmpId,Yes
+DB.SRC,Department,"Transform the values in this column based on the rules given below and convert them all to Upper case in the target:
+If Department from Source is ""Technology"", use ""Tech""
+If Department from Source is ""Human Resource"", use ""HR""
+",DB.TGT,Dept,No
+DB.SRC,Salary,Aggregate the total Salary per year,DB.TGT,Salary,No
+DB.SRC,Date,Use this to derive Year. The format of date in source is YYYY-MM-DD. There is a record for every month at the source,DB.TGT,Year,No
