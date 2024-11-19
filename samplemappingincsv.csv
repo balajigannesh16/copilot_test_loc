@@ -1,0 +1,6 @@
+﻿Source Table Name,Source Column Name,Transformation Rule,Target Table Name,Target Column Name,Primary Key in Target Table
+DB.SRC,EmployeeName,No transformations. This is a direct mapping,DB.TGT,EmpName,No
+DB.SRC,EmployeeId,No transformations. This is a direct mapping,DB.TGT,EmpId,Yes
+DB.SRC,Department,No transformations. This is a direct mapping,DB.TGT,Dept,No
+DB.SRC,Salary,No transformations. This is a direct mapping,DB.TGT,Salary,No
+DB.SRC,Date,No transformations. This is a direct mapping,DB.TGT,Dt,No
